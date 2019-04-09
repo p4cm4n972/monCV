@@ -13,13 +13,21 @@ import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
  */
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { XpComponent } from './xp/xp.component';
+import { CursusComponent } from './cursus/cursus.component';
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    XpComponent,
+    CursusComponent,
+    SkillsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
