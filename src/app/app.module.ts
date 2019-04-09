@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
  * MDBootstrap PRO
  */
 import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
-
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
+/**
+ * component
+ */
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 

@@ -1,1 +1,57 @@
-<router-outlet></router-outlet>
+<!-- Main navigation -->
+<header>
+
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark  fixed-top scrolling-navbar intro-fixed-nav">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><img src="../assets/img/favicon.PNG" alt="nav brand"
+          width="160" height="120"></a>
+    </mdb-navbar-brand>
+    <links [ngClass]="colorNav" >
+      <ul class="navbar-nav mr-auto red-text" >
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active" data-offset="90">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features" data-offset="90">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services" data-offset="90">XP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#opinions" data-offset="30">Cursus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team" data-offset="90">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-facebook-f light-green-text-2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-twitter light-green-text-2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fab fa-instagram light-green-text-2"></i>
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <router-outlet></router-outlet>
+</header>
+
