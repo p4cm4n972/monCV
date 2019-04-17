@@ -17,6 +17,7 @@ import { XpComponent } from './xp/xp.component';
 import { CursusComponent } from './cursus/cursus.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     XpComponent,
     CursusComponent,
     SkillsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
