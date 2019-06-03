@@ -1,20 +1,46 @@
-<div class="view jarallax" style="background-image: url('../../assets/img/skills.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div
+  class="view jarallax"
+  style="background-image: url('../../assets/img/skills.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
+>
   <!-- Mask & flexbox options-->
-  <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+  <div
+    class="mask rgba-black-light d-flex justify-content-center align-items-center"
+  >
     <!-- Content -->
     <div class="container">
       <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-md-12 mb-4 white-text text-center">
-          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
-            data-wow-delay="0.3s"><strong>Minimalist intro</strong></h1>
-          <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-          <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Photography
-              & design</strong></h5>
-          <a mdbBtn color="white" outline="true" mdbWavesEffect class="wow fadeInDown" data-wow-delay="0.4s">portfolio</a>
-          <a mdbBtn color="white" outline="true" mdbWavesEffect class="wow fadeInDown" data-wow-delay="0.4s">About me</a>
-        </div>
+      <div class="row mt-5">
+            <!--Grid column-->
+            <div class="col-md-3 pt-3" *ngFor="let i of [1,2,3,4,5,6,7,8]">
+              <mdb-card class="testimonial-card">
+                <!--Bacground color-->
+                <div class="card-up special-color"></div>
+
+                <!--Avatar-->
+                <div class="avatar mx-auto">
+                  <img
+                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
+                    class="rounded-circle"
+                  />
+                </div>
+
+                <mdb-card-body>
+                  <!--Name-->
+                  <mdb-card-title>
+                    <h4>Anna Doe</h4>
+                  </mdb-card-title>
+                  <hr />
+                  <!--Quotation-->
+                  <p>
+                    <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Eos, adipisci
+                  </p>
+                </mdb-card-body>
+              </mdb-card>
+            </div>
+            <!--Grid column-->
+
+
         <!--Grid column-->
       </div>
       <!--Grid row-->
